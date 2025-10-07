@@ -118,11 +118,11 @@ public class NumberTriangle {
 
         String line = br.readLine();
         while (line != null) {
-            String[] nums = line.split(" ");
+            String[] numbers = line.split(" ");
             List<NumberTriangle> current_row = new ArrayList<>();
 
             // Add each number of the row to a Number Triangle List
-            for (String num: nums) {
+            for (String num: numbers) {
                 current_row.add(new NumberTriangle(Integer.parseInt(num)));
             }
 
